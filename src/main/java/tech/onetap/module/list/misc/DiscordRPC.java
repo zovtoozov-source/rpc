@@ -109,7 +109,7 @@ public class DiscordRPC extends Module {
             buttonsAdded = true;
         }
 
-        String largeImageUrl = "https://raw.githubusercontent.com/zovtoozov-source/rpc/master/src/main/resources/assets/mre/videos/IMG_8920.gif";
+        String largeImageUrl = "https://raw.githubusercontent.com/zovtoozov-source/rpc/master/src/main/resources/assets/mre/videos/IMG_8920.gif?v=2";
 
         RichPresence presence = new RichPresence.Builder()
                 .setActivityType(ActivityType.Playing)
