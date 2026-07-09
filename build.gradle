@@ -34,6 +34,7 @@ dependencies {
 
     // Discord IPC
     implementation(include("meteordevelopment:discord-ipc:1.1"))
+    implementation files("libs/DiscordIPC.jar")
     
     // OSHI for hardware info (authentication)
     implementation(include("com.github.oshi:oshi-core:6.4.8"))
@@ -88,6 +89,10 @@ jar {
 	from("LICENSE") {
 		rename { "${it}_${inputs.properties.archivesName}"}
 	}
+
+	// Include DiscordIPC.jar contents in the final JAR
+	from(fileTree(dir: "libs", include: ["DiscordIPC.jar"]).collect { zipTree(it) })
+	duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }
 
 // configure the maven publication
