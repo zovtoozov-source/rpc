@@ -1,0 +1,13 @@
+build/
+.*
+gradle/
+gradlew
+gradlew.bat
+*.jar
+libs/baritone*.jar
+*.ps1
+*.iml
+*.class
+*.MOV
+*.mov
+src/main/resources/assets/mre/videos/IMG_8920.MOV
