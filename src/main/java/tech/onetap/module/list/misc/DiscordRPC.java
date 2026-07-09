@@ -15,7 +15,7 @@ import tech.onetap.util.discord.ExtendedRichPresence;
 public class DiscordRPC extends Module {
 
     private final ExtendedRichPresence rpc = new ExtendedRichPresence();
-    private static final long APPLICATION_ID = 1469299305268645991L;
+    private static final long APPLICATION_ID = 1524606397155770508L;
     private boolean buttonsAdded = false;
 
     @Override
