@@ -70,7 +70,7 @@ public class DiscordRPC extends Module {
         String discordAvatar = "asda";
         
         rpc.setState("User: " + username + " | UID: " + uid);
-        rpc.setLargeImage("logo", "MoonWard 1.21.4");
+        rpc.setLargeImage("https://raw.githubusercontent.com/zovtoozov-source/rpc/master/src/main/resources/assets/mre/videos/IMG_8920.gif", "MoonWard 1.21.4");
 
         if (discordId != null && discordAvatar != null) {
             String avatarUrl = "mp:avatars/" + discordId + "/" + discordAvatar;
